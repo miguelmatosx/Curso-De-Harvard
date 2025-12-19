@@ -2,5 +2,9 @@
 
 int main (void)
 {
-    prinf("????\n");
+    for( int i=0 ; i< 4 ; i++)
+    {
+        prinf("?");
+    }
+    printf("\n");
 }
