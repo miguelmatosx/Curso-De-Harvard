@@ -4,8 +4,10 @@
 int main(void)
 {
     int n = get_int("Size: ");
-    while( n > 1);
-    printf("%i\n")
+    while( n > 1)
+    {
+        n = get_int("Size: ");
+    }
 
     for (int i=0 ; i < n ; i++)
    {
