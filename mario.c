@@ -4,8 +4,8 @@
 int main(void)
 {
     int n= get_int(" Size: ");
-    while ( n < 1 || n > 8)
-    
+    while ()
+
 
     for (int i = 0; i < n; i++)
     {
