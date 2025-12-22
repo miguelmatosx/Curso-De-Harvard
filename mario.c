@@ -3,16 +3,15 @@
 
 int main (void)
 {
-   int n
+   int n;
    do
    {
       n= get_int("Size: ");
    }
    while( n < 1 || n > 8);
-   return n
+   return n;
 
-
-   for (int i= 0 ; i<n ; i++)
+ for (int i= 0 ; i<n ; i++)
    {
       for (int j=0 ; j < n ; j++)
       {
@@ -20,9 +19,8 @@ int main (void)
       }
       printf("\n");
    }
-
-
-
-
-
 }
+
+
+
+
