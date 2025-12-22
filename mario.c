@@ -3,25 +3,19 @@
 
 int main (void)
 {
-   int n;
-   do
+   int n = get_int("Size: ");
+
+   for (int i= 0 ; i<n ; i++)
    {
-    n=get_int("Height: ");
-   }
-   while( n<1 || n > 8);
-   return n;
-
-   if("n==8 || n> 1")
-
-
-
-   for( int i=0 ; i<3 ; i++)
-   {
-      for( int j = 0 ; j<3 ; j++)
+      for (int j=0 ; j < n ; j++)
       {
          printf("#");
       }
       printf("\n");
    }
+
+
+
+
 
 }
