@@ -3,12 +3,8 @@
 
 int main(void)
 {
-    int n;
-    do
-    {
-        n= get_int("Size:  ");
-    }
-    while( n > 8);
+    int n = get_int("Size: ")
+    
 
     for (int i=0 ; i < n ; i++)
    {
