@@ -3,7 +3,8 @@
 
 int main(void)
 {
-    printf("#"\n);
+    int n= get_int ("Size: ")
+    while(n>)
 
 
 
