@@ -16,5 +16,10 @@ int main(void)
 
         printf("  ");
     }
+    for ( int j= o ; j < i + 1 ; j++)
+    {
+        printf(" # ");
+    }
+    printf("\n");
 
 }
