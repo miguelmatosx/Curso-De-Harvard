@@ -10,8 +10,8 @@ int main (void)
 
    do
    {
-    int centavos = get_int("Qual o valor inserido?");
-    printf( "Qual valor inserido?");
+    centavos = get_int("Qual o valor inserido?");
+    printf( "o troco e:");
     scanf ("%lf", &Valor) ;
    }
    while( Valor > 0);
