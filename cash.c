@@ -10,9 +10,9 @@ int main (void)
 
    do
    {
-    
-    printf( "o troco e:");
-    scanf ("%lf", &Valor) ;
+    Valor = get_double("Qual o valor inserido?\n");
+    printf( "o troco e:%d\n");
+
    }
    while( Valor > 0);
 
