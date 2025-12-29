@@ -29,7 +29,7 @@ int main(void)
 
     moedas += centavos;
 
-    printf("%d\n", moedas);
+    printf("O troco e:%d\n", moedas);
 
     return 0;
 }
