@@ -5,12 +5,15 @@
 
 int main (void)
 {
-   float Valor
+   double Valor
    int centavos
 
    do
    {
     printf( "Qual valor inserido");
-    scanf
+    scanf (%lf, &valor) ;
    }
+   while( valor < 0);
+
+   
 }
