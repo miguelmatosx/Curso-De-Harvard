@@ -21,5 +21,5 @@ int main (void)
      while( quanf <=  quani);
 
 
-     Years = q
+
 }
