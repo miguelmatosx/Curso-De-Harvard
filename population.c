@@ -22,4 +22,6 @@ int main (void)
 
    Years = quani + (quani/3) - (quani/4);
    
+
+  return 0
 }
