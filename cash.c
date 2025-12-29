@@ -10,7 +10,7 @@ int main (void)
 
    do
    {
-    centavos = get_int("Qual o valor inserido?");
+    
     printf( "o troco e:");
     scanf ("%lf", &Valor) ;
    }
