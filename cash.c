@@ -16,4 +16,6 @@ int main (void)
    while( valor < 0);
 
    centavos = round(Valor * 100);
+
+   int moedas = 0
 }
