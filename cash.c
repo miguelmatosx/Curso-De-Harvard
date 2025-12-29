@@ -13,7 +13,7 @@ int main (void)
     printf( "Qual valor inserido:");
     scanf ("%lf", &Valor) ;
    }
-   while( Valor < 0);
+   while( Valor > 0);
 
    centavos = round(Valor * 100);
 
