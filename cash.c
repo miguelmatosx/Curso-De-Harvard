@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <cs50.h>
 
 
 int main (void)
@@ -9,8 +10,8 @@ int main (void)
 
    do
    {
-    
-      printf( "Qual valor inserido?");
+    int centavos = get_int("Qual o valor inserido?");
+    printf( "Qual valor inserido?");
     scanf ("%lf", &Valor) ;
    }
    while( Valor > 0);
