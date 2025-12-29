@@ -8,12 +8,17 @@ int main (void)
     int Years;
     do
     {
-         quani= get_int("Quantidade Inicial:\n");
-         quanf= get_int(" Quantidade Final:\n");
-         Years= get_int("Quantidade de anos:\n");
+         quani= get_int("Quantidade Inicial:");
 
 
     }
-    while( quani <= 9 ; quanf < 9 ; Years < 1);
+    while( quani <= 9);
 
+    do
+    {
+        quanf= get_int("Quantidade final:");
+    }
+     while( quanf < 9);
+
+     Years
 }
