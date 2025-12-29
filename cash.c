@@ -4,5 +4,6 @@
 
 int main (void)
 {
-   
+   double Reais = 
+   int Centavos =
 }
