@@ -20,6 +20,6 @@ int main (void)
     }
      while( quanf <=  quani);
 
-
-
+   Years = quani + (quani/3) - (quani/4);
+   
 }
