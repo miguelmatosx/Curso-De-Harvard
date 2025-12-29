@@ -25,11 +25,11 @@ int main (void)
 
      while( populacao < quanf)
    {
-    populacao = populacao + (populacao/3) - (populacao/4);
-   Years++;
+    populacao += (populacao / 3) - (populacao / 4);
+    Years++;
    }
    printf("Anos:%i\n",Years);
 
 
-  
+
 }
