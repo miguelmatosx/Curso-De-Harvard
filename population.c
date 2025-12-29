@@ -5,8 +5,7 @@ int main (void)
 {
     int quani;
     int quanf;
-    int Years = 0;
-    int populacao = quani;
+
     do
     {
          quani= get_int("Quantidade Inicial:");
@@ -19,7 +18,10 @@ int main (void)
     {
         quanf= get_int("Quantidade final:");
     }
-     while( quanf <=  quani);
+     while( quanf < quani);
+
+     int populacao = 0 ;
+     int Years = 0;
 
      while( populacao < quanf)
    {
@@ -29,5 +31,5 @@ int main (void)
    printf("Anos:%i\n",Years);
 
 
-  return 0;
+  
 }
