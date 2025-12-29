@@ -1,9 +1,16 @@
 #include <stdio.h>
 #include <cs50.h>
+#include < math.h>
 
 
 int main (void)
 {
-   double Reais = 
-   int Centavos =
+   float Valor
+   int centavos
+
+   do
+   {
+    printf( "Qual valor inserido");
+    scanf
+   }
 }
