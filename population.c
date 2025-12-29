@@ -8,5 +8,5 @@ int main (void)
     {
          quani= get_int("Quantidade Inicial?\n");
     }
-    while
+    while( quani >== 9);
 }
