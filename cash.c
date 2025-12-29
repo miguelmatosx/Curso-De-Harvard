@@ -10,7 +10,7 @@ int main (void)
 
    do
    {
-    printf( "Qual valor inserido:");
+    printf( "Qual valor inserido\n");
     scanf ("%lf", &Valor) ;
    }
    while( Valor > 0);
