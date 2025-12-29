@@ -5,7 +5,8 @@ int main (void)
 {
     int quani;
     int quanf;
-    int Years;
+    int Years = 0;
+    int populacao
     do
     {
          quani= get_int("Quantidade Inicial:");
@@ -20,8 +21,10 @@ int main (void)
     }
      while( quanf <=  quani);
 
-   Years = quani + (quani/3) - (quani/4);
-   
+     while( populacao < quanf)
+   populacao = quani + (quani/3) - (quani/4);
+   Years++;
 
-  return 0
+
+  return 0;
 }
