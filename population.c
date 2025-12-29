@@ -12,7 +12,7 @@ int main (void)
 
 
     }
-    while( quani <= 9);
+    while( quani < 9);
 
     do
     {
@@ -20,7 +20,7 @@ int main (void)
     }
      while( quanf < quani);
 
-     int populacao = 0 ;
+     int populacao = quani;
      int Years = 0;
 
      while( populacao < quanf)
