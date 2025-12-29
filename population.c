@@ -18,7 +18,8 @@ int main (void)
     {
         quanf= get_int("Quantidade final:");
     }
-     while( quanf < 9);
+     while( quanf <=  quani);
 
-     Years
+
+     Years = q
 }
