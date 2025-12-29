@@ -15,5 +15,5 @@ int main (void)
    }
    while( valor < 0);
 
-   
+   centavos = round(Valor * 100);
 }
