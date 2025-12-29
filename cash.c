@@ -17,7 +17,11 @@ int main (void)
 
    centavos = round(Valor * 100);
 
-   int moedas = 0
+   int moedas = 0;
 
-   moedas += centavos/25
+   moedas += centavos/25;
+   centavos%= 25;
+
+   moedas += centavos/16
+   centavos%= 16
 }
