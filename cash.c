@@ -11,8 +11,7 @@ int main (void)
    do
    {
     Valor = get_double("Qual o valor inserido?\n");
-    printf( "o troco e:%d\n");
-
+    
    }
    while( Valor > 0);
 
