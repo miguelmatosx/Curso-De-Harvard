@@ -11,9 +11,9 @@ int main (void)
    do
    {
     Valor = get_double("Qual o valor inserido?\n");
-    
+
    }
-   while( Valor > 0);
+   while( Valor <= 0);
 
    centavos = round(Valor * 100);
 
