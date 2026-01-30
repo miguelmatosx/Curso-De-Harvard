@@ -6,10 +6,10 @@
 int main(void)
 {
     string texto = get_string ("Insira o Texto: ");
-    letras = 0;
+    int letras = 0;
 
 
-    for( int letras = 0 ; letras < strlen(texto) ; letras++)
+    for( int i = 0 ; i < strlen(texto) ; i++)
     {
 
             if(isalpha(texto[letras]))
