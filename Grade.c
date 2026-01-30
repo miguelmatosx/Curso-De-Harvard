@@ -6,6 +6,7 @@
 int main(void)
 {
     string texto = get_string ("Insira o Texto: ");
+    letras = 0;
 
 
     for( int letras = 0 ; letras < strlen(texto) ; letras++)
@@ -13,8 +14,8 @@ int main(void)
 
             if(isalpha(texto[letras]))
         {
-            printf("Letras:%i\n , letras");
+             letras++;
         }
     }
-
+  printf("Letras:%i\n", letras);
 }
