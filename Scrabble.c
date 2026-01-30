@@ -12,7 +12,7 @@ int main(void)
 {
   string word1;
   string word2;
-  bool valido;
+
 
   int score1 = compute_score(word1);
   int score2 = compute_score(word2);
