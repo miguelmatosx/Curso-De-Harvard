@@ -67,6 +67,8 @@ else if(score2 > score1)
     printf("Tie\n");
   }
 
+}
+
 
   int compute_score(string word)
   {
@@ -87,4 +89,4 @@ else if(score2 > score1)
 
  }
 
-}
+
