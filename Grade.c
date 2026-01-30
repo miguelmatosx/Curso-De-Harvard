@@ -7,10 +7,11 @@ int main(void)
 {
     string texto = get_string ("Insira o Texto: ");
 
-    int letras
+    int letras = 0;
     do
     {
-        
+        letras = get_int("Letras: ");
     }
+    while(isalpha(letras));
 }
 
