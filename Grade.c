@@ -5,6 +5,7 @@
 
 int main(void)
 {
-    string texto = get
+    string texto = get_string ("Insira o Texto: ");
+    
 }
 
