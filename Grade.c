@@ -7,12 +7,13 @@ int main(void)
 {
     string texto = get_string ("Insira o Texto: ");
 
-    int letras
-    for( int l = 0 ; l < strlen(texto) ; l++);
+
+    for( int letras = 0 ; letras < strlen(texto) ; letras++)
     {
-        if(isalpha(texto[l]));
+
+            if(isalpha(texto[letras]))
         {
-            
+            printf("Letras:%i\n , letras");
         }
     }
 
