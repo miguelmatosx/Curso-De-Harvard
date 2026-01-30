@@ -14,41 +14,6 @@ int main(void)
   string word2;
   bool valido;
 
-  do
-  {
-  valido = true;
-  word1 = get_string ("Player 1: ");
-
-  for ( int i = 0 ; i < strlen(word1) ; i++)
-{
-    if (!isalpha(word1[i]))
-    {
-
-    valido = false;
-    break;
-    }
-}
-
-  }
-  while(!valido);
-
-  do
-  {
-    valido = true;
-    word2  = get_string("Player 2: ");
-
-    for(int i = 0 ; i < strlen(word2) ; i++)
-    {
-      if(!isalpha(word2[i]))
-      {
-        valido = false;
-        break;
-      }
-    }
-
-  }
-  while(!valido);
-
   int score1 = compute_score(word1);
   int score2 = compute_score(word2);
 
