@@ -67,11 +67,22 @@ else if(score2 > score1)
     printf("Tie\n");
   }
 
-  int compute_score(string word);
+
+  int compute_score(string word)
+  {
+
+    int score = 0;
 
   for (int i = 0 ; i < strlen(word) ; i++)
+  {
 
-  
+     char c = toupper( word[i]);
+     score +=POINTS[ c - 'A'];
+  }
+
+  }
+
+ return score;
 
 
  }
