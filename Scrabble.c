@@ -42,14 +42,14 @@ else if(score2 > score1)
 
   for (int i = 0 ; i < strlen(word) ; i++)
   {
-
+      if(isalpha(word[i]))
+      {
      char c = toupper( word[i]);
      score +=POINTS[ c - 'A'];
+      }
   }
 
-
-
- return score;
+return score;
 
 
  }
