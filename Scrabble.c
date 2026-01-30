@@ -80,9 +80,11 @@ else if(score2 > score1)
      score +=POINTS[ c - 'A'];
   }
 
-  }
+
 
  return score;
 
 
  }
+
+}
