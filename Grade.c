@@ -6,6 +6,11 @@
 int main(void)
 {
     string texto = get_string ("Insira o Texto: ");
-    
+
+    int letras
+    do
+    {
+        
+    }
 }
 
