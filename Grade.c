@@ -32,13 +32,10 @@ int main(void)
 
     do
     {
-      palavras = espaço + 1
+      palavras = espaço + 1;
     }
-    while(palavras > 1 );
+    while(palavras > 1 ; palavras++);
 
-
-
-
-
-
+  }
+  printf("Palavras: %i\n", palavras);
 }
