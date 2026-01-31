@@ -32,7 +32,7 @@ int main(void)
 
   }
 
-  while(palavras > 1)
+  while(palavras >= 1)
   {
     printf("Palavras:%i\n", espaço + 1);
   }
