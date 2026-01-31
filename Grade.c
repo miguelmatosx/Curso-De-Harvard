@@ -32,8 +32,9 @@ int main(void)
 
     do
     {
-      palavras = espaço
+      palavras = espaço + 1
     }
+    while(palavras > 1 );
 
 
 
