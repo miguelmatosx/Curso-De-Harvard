@@ -19,6 +19,24 @@ int main(void)
     }
   printf("Letras:%i\n", letras);
 
+  int espaço = 0;
+  int palavras = 0;
+
+  for( int i = 0 ; i < strlen(texto) ; i++)
+  {
+
+    if(isblank(texto[espaço]))
+    {
+      espaço++;
+      palavras = espaço + 1;
+    }
+  }
+
+  printf("Palavras:%i\n" , palavras);
+
+
+
+
 
 
 }
