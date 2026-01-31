@@ -28,11 +28,12 @@ int main(void)
     if(isblank(texto[espaço]))
     {
       espaço++;
-      palavras = espaço + 1;
     }
-  }
 
-  printf("Palavras:%i\n" , palavras);
+    do
+    {
+      palavras = espaço
+    }
 
 
 
