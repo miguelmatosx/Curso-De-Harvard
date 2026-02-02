@@ -55,9 +55,13 @@ S = (float) frase/palavras  * 100;
 
 float indice = 0;
 
- indice = 0.0588 * L - 0.296 * S - 15.8
+ indice = 0.0588 * L - 0.296 * S - 15.8;
 
- 
+ int Grade = round(indice) ;
+
+ printf("Grade: %i\n" , Grade);
+
+
 
 
 
