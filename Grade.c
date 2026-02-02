@@ -58,7 +58,21 @@ S = (float) frase/palavras  * 100;
 
  int Grade = round(indice) ;
 
- printf("Grade: %i\n" , Grade);
+ if (Grade < 1)
+ {
+  printf("Before grade 1\n");
+ }
+
+ else if (Grade >= 16)
+ {
+    printf("Grade 16+\n");
+ }
+
+ else
+ {
+   printf("Grade %i\n" , Grade);
+ }
+
 
 
 
