@@ -19,20 +19,15 @@ int main(void)
         }
     }
 
+int palavras = 1;
 
-  int espaço = 0;
-  int palavras = 0;
-
-  for( int i = 0 ; i < strlen(texto) ; i++)
-  {
-
-    if(isblank(texto[i]))
-    {
-      espaço++;
-      palavras = espaço + 1;
-    }
-
-  }
+for (int i = 0 ; i < strlen(texto) ; i++);
+{
+   if (texto[i] == ' ' );
+   {
+     palavras++
+   }
+}
 
 
 
