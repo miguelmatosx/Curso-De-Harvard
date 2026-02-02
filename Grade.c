@@ -53,9 +53,8 @@ float S = 0;
 L = (float) letras/palavras * 100;
 S = (float) frase/palavras  * 100;
 
-float indice = 0;
 
- indice = 0.0588 * L - 0.296 * S - 15.8;
+ float indice = 0.0588 * L - 0.296 * S - 15.8;
 
  int Grade = round(indice) ;
 
