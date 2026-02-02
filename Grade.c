@@ -57,6 +57,8 @@ float indice = 0;
 
  indice = 0.0588 * L - 0.296 * S - 15.8
 
+ 
+
 
 
 
