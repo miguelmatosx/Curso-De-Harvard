@@ -3,14 +3,14 @@
 #include <math.h>
 #include <ctype.h>
 #include <string.h>
+#include <stdlib.h>
 
 
 
 int main( int argc , string argv[])
 {
-   int key = atoi(argv[1]);
 
-   if(argc != 2)
+if(argc != 2)
    {
     printf("Usage : ./Caesar key\n");
       return 1;
@@ -28,7 +28,7 @@ int main( int argc , string argv[])
       }
 
    }
-   int key = atoi(argv[1]);
+  
    string plaintext = get_string("Qual o texto: ");
 
 
