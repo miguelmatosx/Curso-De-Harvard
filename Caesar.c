@@ -45,5 +45,19 @@ if(argc != 2)
        char nova_letra = nova_posicao + 'A' ;
        printf("%c" , nova_letra);
    }
+    else if (islower(c))
+    {
+      int posicao = c - 'a';
+      int nova_posicao = (posicao + key) % 26;
+      int nova_letra = nova_posicao + 'a';
+      printf("%c" , nova_letra);
+    }
+    else
+    {
+      printf("%c" , c);
+    }
 }
+
+printf("\n");
+return 0;
 }
