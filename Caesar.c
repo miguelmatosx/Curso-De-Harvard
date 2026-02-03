@@ -8,6 +8,8 @@ int key = argv[1][i];
 
 int main( int argc , string argv[])
 {
+   int key = atoi(argv[1]);
+   
    if(argc != 2)
    {
     printf("Usage : ./Caesar key\n");
@@ -26,7 +28,7 @@ int main( int argc , string argv[])
 
    string plaintext = get_string("Qual o texto: ");
 
-   
+
 
    for( int i = 0 ; i < strlen(plaintext) ; i++)
  {
