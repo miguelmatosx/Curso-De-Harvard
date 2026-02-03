@@ -25,9 +25,12 @@ int main( int argc , string argv[])
 
    for( int i = 0 ; i < strlen(plaintext) ; i++)
    {
-      if(isalpha(plaintext[i]))
+
+      char c = plaintext[i];
+
+   if(isupper(c))
       {
-        
+         int posicao = c - 'A';
       }
    }
 }
