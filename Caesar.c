@@ -4,6 +4,8 @@
 #include <ctype.h>
 #include <string.h>
 
+int key = argv[1][i];
+
 int main( int argc , string argv[])
 {
    if(argc != 2)
@@ -23,6 +25,8 @@ int main( int argc , string argv[])
    }
 
    string plaintext = get_string("Qual o texto: ");
+
+   
 
    for( int i = 0 ; i < strlen(plaintext) ; i++)
  {
