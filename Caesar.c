@@ -2,6 +2,7 @@
 #include <cs50.h>
 #include <math.h>
 #include <ctype.h>
+#include <string.h>
 
 int main( int argc , string argv[])
 {
@@ -24,15 +25,16 @@ int main( int argc , string argv[])
    string plaintext = get_string("Qual o texto: ");
 
    for( int i = 0 ; i < strlen(plaintext) ; i++)
-   {
+ {
 
       char c = plaintext[i];
 
    if(isupper(c))
-      {
-         int posicao = c - 'A';
-      }
-      int nova_posicao = (posicao + key) % 26;
+   {
+       int posicao = c - 'A';
+       int nova_posicao = (posicao + key) % 26;
+       char nova_letra = nova_posicao + 'A' ;
+       printf("%c" , nova_letra);
    }
-
+}
 }
