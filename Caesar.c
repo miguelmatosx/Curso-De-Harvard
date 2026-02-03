@@ -32,5 +32,7 @@ int main( int argc , string argv[])
       {
          int posicao = c - 'A';
       }
+      int nova_posicao = (posicao + key) % 26;
    }
+
 }
