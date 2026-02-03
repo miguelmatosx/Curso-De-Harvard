@@ -23,5 +23,11 @@ int main( int argc , string argv[])
 
    string plaintext = get_string("Qual o texto: ");
 
-   
+   for( int i = 0 ; i < strlen(plaintext) ; i++)
+   {
+      if(!isalpha(plaintext[i]))
+      {
+         return 1 
+      }
+   }
 }
