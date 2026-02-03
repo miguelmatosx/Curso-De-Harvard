@@ -25,9 +25,9 @@ int main( int argc , string argv[])
 
    for( int i = 0 ; i < strlen(plaintext) ; i++)
    {
-      if(!isalpha(plaintext[i]))
+      if(isalpha(plaintext[i]))
       {
-         return 1 
+        
       }
    }
 }
