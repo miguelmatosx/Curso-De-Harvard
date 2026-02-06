@@ -7,12 +7,12 @@ int main (void)
 {
     typedef struct
     {
-        string Alice;
+        string nome;
         int vote;
     }
     candidates;
 
-    
+
 
 
 }
