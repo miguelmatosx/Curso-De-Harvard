@@ -5,6 +5,15 @@
 
 int main (void)
 {
-    type
+    typedef struct
+    {
+        string Alice;
+        int vote;
+    }
+    candidates;
+
+    
+
+
 }
 
