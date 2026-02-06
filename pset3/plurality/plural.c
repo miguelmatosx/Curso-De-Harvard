@@ -18,7 +18,7 @@ int candidate_count ;
 bool vote (string name);
 void print_winner(void);
 
-int main (int argc , string argv[])
+int main(int argc , string argv[])
 
 if (argc < 2)
 {
@@ -48,7 +48,7 @@ for (int i = 0 ; i < voter_counter ; i++)
 
     if (!vote(name))
     {
-        printf ("Invalid Vote\n") ; 
+        printf ("Invalid Vote\n") ;
     }
 }
 
