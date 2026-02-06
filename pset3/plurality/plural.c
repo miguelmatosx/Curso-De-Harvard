@@ -40,6 +40,18 @@ for (int i = 0 ; i < candidate_count ; i++)
     candidates[i].votes = 0;
 }
 
+int voter_counter = get_int ("Number of voters: " );
+
+for (int i = 0 ; i < voter_counter ; i++)
+{
+    string name = get_string ("Vote : ");
+
+    if (!vote(name))
+    {
+        printf ("Invalid Vote\n") ; 
+    }
+}
+
 
 
 
