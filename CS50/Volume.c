@@ -23,9 +23,17 @@ int main (int argc[] , char *argv[] )
   if (output== NULL)
   {
     printf("Could not open the file.\n");
-    return 1
+    return 1;
 
   }
+
+  float factor = atof(argv[3]);
+
+
+
+
+  fclose(input);
+  fclose(output);
 
 
 
