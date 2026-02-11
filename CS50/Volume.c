@@ -13,15 +13,15 @@ int main(int argc, char *argv[])
      return 1;
    }
 
-  FILE *output = fopen (argv[1] , "r");
-  if (output == NULL)
+  FILE *input = fopen (argv[1] , "r");
+  if (input == NULL)
   {
     printf ("Could not open the file.\n");
     return 1;
   }
 
-  FILE *input = fopen (argv[2] , "w");
-  if (output== NULL)
+  FILE *output = fopen (argv[2] , "w");
+  if (output == NULL)
   {
     printf("Could not open the file.\n");
     return 1;
@@ -29,30 +29,26 @@ int main(int argc, char *argv[])
   }
 
   float factor = atof(argv[3]);
-  if (factor < 1)
+  if (factor < 0)
   {
     printf("Make Some Change.\n");
-    return 1
+    return 1;
   }
 
-  uint8_t header[HEADER_SIZE];
-  fread(header , HEARDER_SIZE , 1 , input);
+  int8_t header[HEADER_SIZE];
+  fread(header , HEADER_SIZE , 1 , input);
   fwrite(header , HEADER_SIZE , 1 , output);
 
-  uint16_t sample
-  while fread(&sample , sizeof(uint16_t) , 1 , input)
+  int16_t sample;
+
+  while (fread(&sample , sizeof(int16_t) , 1 , input))
   {
-     sample *= factor
-     fwrite(&sample , sizeof(uint16_t) , 1 , output);
+     sample *= factor;
+     fwrite(&sample , sizeof(int16_t) , 1 , output);
   }
 
   fclose(input);
   fclose(output);
-
-
-
-
-
 
 }
 
