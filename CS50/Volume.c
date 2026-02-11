@@ -29,13 +29,13 @@ int main(int argc, char *argv[])
   }
 
   float factor = atof(argv[3]);
-  if (factor < 0)
+  if (factor >= 0)
   {
-    printf("Make Some Change.\n");
+    printf("Factor must be non-negative\n");
     return 1;
   }
 
-  int8_t header[HEADER_SIZE];
+  uint8_t header[HEADER_SIZE];
   fread(header , HEADER_SIZE , 1 , input);
   fwrite(header , HEADER_SIZE , 1 , output);
 
