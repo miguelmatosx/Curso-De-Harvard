@@ -36,8 +36,16 @@ int main(int argc, char *argv[])
   }
 
   uint8_t header[HEADER_SIZE];
+  if (fread(header , HEADER_SIZE , 1, input) != 1)
+  {
+    printf("Could not read Header.\n");
+    fclose(input);
+    fclose(output);
+    return 1;
+  }
+  fwrite(header , HEADER_SIZE , 1 , output);
 
-  
+
   fread(header , HEADER_SIZE , 1 , input);
   fwrite(header , HEADER_SIZE , 1 , output);
 
