@@ -39,6 +39,8 @@ int main(int argc, char *argv[])
   fread(header , HEARDER_SIZE , 1 , input);
   fwrite(header , HEADER_SIZE , 1 , output);
 
+  uint16_t sample
+
 
 
   fclose(input);
