@@ -42,9 +42,7 @@ int main(int argc, char *argv[])
   uint16_t sample
   while
   {
-
-
-    fread(&sample , sizeof(uint16_t) , 1 , input)
+     fread(&sample , sizeof(uint16_t) , 1 , input)
   }
 
 
