@@ -35,8 +35,9 @@ int main(int argc, char *argv[])
     return 1
   }
 
-  //Depois de almoçar, olhar o Perplexity para aprender sobre o uint8_t e o uint_16
-
+  uint8_t header[HEADER_SIZE];
+  fread(header , HEARDER_SIZE , 1 , input);
+  fwrite(header , HEADER_SIZE , 1 , output);
 
 
 
