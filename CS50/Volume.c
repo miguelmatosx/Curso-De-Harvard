@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdint.h>
 
 const int HEADER_SIZE = 44;
 
@@ -31,7 +32,7 @@ int main(int argc, char *argv[])
   if (factor < 1)
   {
     printf("Make Some Change.\n");
-    return 1 
+    return 1
   }
 
 
