@@ -4,7 +4,7 @@
 
 const int HEADER_SIZE = 44;
 
-int main (int argc[] , char *argv[] )
+int main(int argc, char *argv[])
 {
    if (argc != 4)
    {
@@ -19,7 +19,7 @@ int main (int argc[] , char *argv[] )
     return 1;
   }
 
-  FILE *input = fopen (argv[2] , "w"):
+  FILE *input = fopen (argv[2] , "w");
   if (output== NULL)
   {
     printf("Could not open the file.\n");
