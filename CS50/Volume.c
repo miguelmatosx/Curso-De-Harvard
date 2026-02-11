@@ -28,6 +28,11 @@ int main(int argc, char *argv[])
   }
 
   float factor = atof(argv[3]);
+  if (factor < 1)
+  {
+    printf("Make Some Change.\n");
+    return 1 
+  }
 
 
 
