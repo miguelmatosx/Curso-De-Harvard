@@ -40,6 +40,15 @@ int main(int argc, char *argv[])
   fwrite(header , HEADER_SIZE , 1 , output);
 
   uint16_t sample
+  while
+  {
+
+
+    fread(&sample , sizeof(uint16_t) , 1 , input)
+  }
+
+
+
 
 
 
