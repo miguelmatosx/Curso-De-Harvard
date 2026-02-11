@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
   }
 
   float factor = atof(argv[3]);
-  if (factor >= 0)
+  if (factor < 0)
   {
     printf("Factor must be non-negative\n");
     return 1;
@@ -43,10 +43,6 @@ int main(int argc, char *argv[])
     fclose(output);
     return 1;
   }
-  fwrite(header , HEADER_SIZE , 1 , output);
-
-
-  fread(header , HEADER_SIZE , 1 , input);
   fwrite(header , HEADER_SIZE , 1 , output);
 
   int16_t sample;
