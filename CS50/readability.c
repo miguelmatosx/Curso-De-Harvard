@@ -3,77 +3,40 @@
 #include <ctype.h>
 #include <string.h>
 #include <math.h>
+#include <stdbool.h>
 
 int main(void)
 {
-    string texto = get_string ("Insira o Texto: ");
+    string texto = get_string("Text: ");
+
     int letras = 0;
+    int frase = 0;
 
+    int palavras = 0;
+    bool em_palavra = false;
 
-    for( int i = 0 ; i < strlen(texto) ; i++)
+    for (int i = 0, n = strlen(texto); i < n; i++)
     {
+        if (isalpha(texto[i])) letras++;
+        if (texto[i] == '.' || texto[i] == '!' || texto[i] == '?') frase++;
 
-            if(isalpha(texto[i]))
+        if (isspace(texto[i]))
         {
-             letras++;
+            em_palavra = false;
+        }
+        else if (!em_palavra)
+        {
+            palavras++;
+            em_palavra = true;
         }
     }
 
-int palavras = 1;
+    float L = (float) letras / palavras * 100;
+    float S = (float) frase / palavras * 100;
 
-for (int i = 0 ; i < strlen(texto) ; i++)
-{
-   if (isalpha(texto[i]) && (i== 0 || !isalpha(texto[i-1])))
-   {
-     palavras++;
-   }
-}
+    int Grade = round(0.0588 * L - 0.296 * S - 15.8);
 
-
-
- int frase = 0;
-
- for( int i = 0 ; i < strlen(texto) ; i++)
-{
-      if (texto[i] == '.' || texto[i] == '!' || texto[i] == '?')
- {
-      frase++;
- }
-
-}
-
-float L = 0;
-float S = 0;
-
-L = (float) letras/palavras * 100;
-S = (float) frase/palavras  * 100;
-
-
- float indice = 0.0588 * L - 0.296 * S - 15.8;
-
- int Grade = round(indice) ;
-
- if (Grade < 1)
- {
-  printf("Before grade 1\n");
- }
-
- else if (Grade >= 16)
- {
-    printf("Grade 16+\n");
- }
-
- else
- {
-   printf("Grade %i\n" , Grade);
- }
-
-
-
-
-
-
-
-
-
+    if (Grade < 1) printf("Before Grade 1\n");
+    else if (Grade >= 16) printf("Grade 16+\n");
+    else printf("Grade %i\n", Grade);
 }
