@@ -19,12 +19,12 @@ int main(void)
 
   if ( score1 > score2)
 {
-   printf("Player 1 venceu\n");
+   printf("Player 1 wins!\n");
 }
 
 else if(score2 > score1)
   {
-     printf("Player 2 venceu\n");
+     printf("Player 2 wins!\n");
   }
 
   else
