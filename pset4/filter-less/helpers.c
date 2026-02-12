@@ -49,6 +49,21 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
 // Reflect image horizontally
 void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
+    for (int i = 0; i < height; i++)     // Cada linha
+    {
+        for (int j = 0; j < width / 2; j++)  // Metade direita
+        {
+            RGBTRIPLE temp = image[i][j];           // Esquerda
+            image[i][j] = image[i][width - 1 - j];  // Direita → esquerda
+            image[i][width - 1 - j] = temp;         // Esquerda → direita
+        }
+    }
+}
+
+
+// Blur image
+void blur(int height, int width, RGBTRIPLE image[height][width])
+{
     RGBTRIPLE temp[height][width];  // Cópia pra não bagunçar
 
     for (int i = 0; i < height; i++)
@@ -83,12 +98,5 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
             image[i][j] = temp[i][j];
 
 
-    return;
-}
-
-
-// Blur image
-void blur(int height, int width, RGBTRIPLE image[height][width])
-{
     return;
 }
