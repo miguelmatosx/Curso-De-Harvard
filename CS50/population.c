@@ -1,35 +1,31 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int main (void)
+int main(void)
 {
-    int quani;
-    int quanf;
+    int start;
+    int end;
 
     do
     {
-         quani= get_int("Quantidade Inicial:");
-
-
+        start = get_int("Start size: ");
     }
-    while( quani < 9);
+    while (start < 9);
 
     do
     {
-        quanf= get_int("Quantidade final:");
+        end = get_int("End size: ");
     }
-     while( quanf < quani);
+    while (end < start);
 
-     int populacao = quani;
-     int Years = 0;
+    int population = start;
+    int years = 0;
 
-     while( populacao < quanf)
-   {
-    populacao += (populacao / 3) - (populacao / 4);
-    Years++;
-   }
-   printf("Anos:%i\n",Years);
+    while (population < end)
+    {
+        population += (population / 3) - (population / 4);
+        years++;
+    }
 
-
-
+    printf("Years: %i\n", years);
 }
