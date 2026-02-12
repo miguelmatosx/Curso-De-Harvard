@@ -55,7 +55,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int j = 0 ; j < widht ; j++)
         {
-            int sumR = 0 , int sumG
+            int sumR = 0 , in sumG = 0 , sumB = 0 , count = 0;
         }
     }
     return;
