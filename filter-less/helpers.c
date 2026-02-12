@@ -49,17 +49,43 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
 // Reflect image horizontally
 void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
-    RGBTRIPLE temp [height][width];
+    RGBTRIPLE temp[height][width];  // Cópia pra não bagunçar
 
-    for (int i = 0 ; i < height ; i++)
+    for (int i = 0; i < height; i++)
     {
-        for (int j = 0 ; j < widht ; j++)
+        for (int j = 0; j < width; j++)
         {
-            int sumR = 0 , in sumG = 0 , sumB = 0 , count = 0;
+            int sumR = 0, sumG = 0, sumB = 0, count = 0;
+
+            // Janela 3x3
+            for (int di = -1; di <= 1; di++)
+            {
+                for (int dj = -1; dj <= 1; dj++)
+                {
+                    int ni = i + di, nj = j + dj;
+                    if (ni >= 0 && ni < height && nj >= 0 && nj < width)
+                    {
+                        sumR += image[ni][nj].rgbtRed;
+                        sumG += image[ni][nj].rgbtGreen;
+                        sumB += image[ni][nj].rgbtBlue;
+                        count++;
+                    }
+                }
+            }
+            temp[i][j].rgbtRed   = round(sumR / (float) count);
+            temp[i][j].rgbtGreen = round(sumG / (float) count);
+            temp[i][j].rgbtBlue  = round(sumB / (float) count);
         }
     }
+    // Copia temp → image
+    for (int i = 0; i < height; i++)
+        for (int j = 0; j < width; j++)
+            image[i][j] = temp[i][j];
+
+
     return;
 }
+
 
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
