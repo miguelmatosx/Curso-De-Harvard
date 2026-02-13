@@ -4,17 +4,15 @@
 
 int main(void)
 {
-    double Valor;
+    
     int centavos;
 
     do
     {
 
-        Valor = get_double("Qual o valor inserido?\n");
+        centavos = get_int("Change Owned:\n");
     }
-    while (Valor < 0);
-
-    centavos = round(Valor * 100);
+    while (centavos < 0);
 
     int moedas = 0;
 
@@ -29,7 +27,7 @@ int main(void)
 
     moedas += centavos;
 
-    printf("%d\n", moedas);
+    printf("%i\n", moedas);
 
     return 0;
 }
