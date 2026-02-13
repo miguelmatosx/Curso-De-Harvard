@@ -29,8 +29,8 @@ if(argc != 2)
 
    }
 
-   string plaintext = get_string("Qual o texto: ");
-   printf("Cri: ");
+   string plaintext = get_string("Text: ");
+   printf("ciphertext: ");
 
 
 
