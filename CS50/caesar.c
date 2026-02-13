@@ -30,7 +30,7 @@ if(argc != 2)
    }
 
    string plaintext = get_string("Qual o texto: ");
-   printf("Criptografado: ");
+   printf("Cri: ");
 
 
 
