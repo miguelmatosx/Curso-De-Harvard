@@ -19,6 +19,12 @@ void draw(int height)
         }
         printf("\n");
     }
+
+    if ( height <= 0)
+    {
+        printf ("Invalid\n");
+        
+    }
 }
 
 
