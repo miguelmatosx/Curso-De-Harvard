@@ -7,8 +7,9 @@ int main (void)
 {
     int height = get_int ("Altura : ");
     draw(height);
+}
 
-void draw(height)
+void draw ( int height)
 {
     for (int i = 0 ; i < height ; i++)
     {
@@ -21,4 +22,4 @@ void draw(height)
 }
 
 
-}
+
