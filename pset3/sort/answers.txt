@@ -1,11 +1,11 @@
-sort1 uses: TODO
+sort1 uses: Bubble Sort
 
 How do you know? :  Because its running time was much faster for sorted input than for reversed or random input, suggesting it benefits a lot when the data is already in order
 
-sort2 uses: Selection
+sort2 uses: Merge Sort
 
 How do you know?: Because its running time stayed very similar across sorted, reversed, and random inputs, suggesting the initial order does not change performance much.
 
-sort3 uses: Merge
+sort3 uses: Selection Sort
 
 How do you know?: Because its running time was fairly consistent across input orders, without a dramatic speed-up on already-sorted data
