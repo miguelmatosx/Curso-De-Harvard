@@ -3,5 +3,8 @@
 
 int main (void)
 {
-    printf("Hello World\n");
+    string name = get_string(" Qual o seu Nome : ");
+
+    printf ("hello, %s\n" , name);
+
 }
