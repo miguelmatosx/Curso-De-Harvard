@@ -1,11 +1,11 @@
 sort1 uses: TODO
 
-How do you know? :  Com a entrada já ordenada (sorted), o tempo ficou bem menor do que com reversed/random, o que indica que o programa se beneficia muito quando a lista já começa ordenada
+How do you know? :  Because its running time was much faster for sorted input than for reversed or random input, suggesting it benefits a lot when the data is already in order
 
 sort2 uses: TODO
 
-How do you know?: TODO
+How do you know?: Because its running time stayed very similar across sorted, reversed, and random inputs, suggesting the initial order does not change performance much.
 
 sort3 uses: TODO
 
-How do you know?: TODO
+How do you know?: Because its running time was fairly consistent across input orders, without a dramatic speed-up on already-sorted data
