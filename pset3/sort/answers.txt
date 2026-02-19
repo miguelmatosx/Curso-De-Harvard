@@ -1,6 +1,6 @@
 sort1 uses: TODO
 
-How do you know?: TODO
+How do you know? :  Com a entrada já ordenada (sorted), o tempo ficou bem menor do que com reversed/random, o que indica que o programa se beneficia muito quando a lista já começa ordenada
 
 sort2 uses: TODO
 
