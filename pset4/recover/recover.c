@@ -26,14 +26,25 @@ int main(int argc, char *argv[])
     buffer[1] == 0xd8 &&
     buffer[2] == 0xff &&
     (buffer[3] & 0xf0) == 0xe0)
-
+    {
      if (img !== NULL)
      {
        fclose (img);
      }
 
-}
+     char filename[8];
+     sprint(filename , "%03i.jpg" , jpg_count);
 
+     img = fopen(filename , w);
+
+     jpg_count++;
+
+
+     }
+    if ( img == NULL)
+    {
+        fwrite (buffer , 1 , 512 , img);
+    }
 
 
 }
