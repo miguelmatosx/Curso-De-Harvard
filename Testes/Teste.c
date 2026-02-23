@@ -22,6 +22,9 @@ int main (void)
         }
         n ->number = get_int("Number: ");
         n ->next = NULL;
+
+        n -> next;
+        list = n;
     }
 
 
