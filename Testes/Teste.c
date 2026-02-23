@@ -26,6 +26,7 @@ int main (void)
         n -> next;
         list = n;
     }
+    return 0;
 
 
 
