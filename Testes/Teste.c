@@ -26,6 +26,7 @@ int main (void)
         n -> next;
         list = n;
     }
+    *node ptr = list;
     return 0;
 
 
