@@ -48,10 +48,13 @@ unsigned int hash(const char *word)
 bool load(const char *dictionary)
 {
    FILE *file = fopen(dictionary, "r");
-   while ( file != NULL)
+   if ( file == NULL)
    {
-   fscanf(file , %s , word);
+       return false;
    }
+  while(fscanf(file , %s , word) == 1)
+  {
+
 
    strcpy(node->word , word);
 
@@ -63,10 +66,10 @@ bool load(const char *dictionary)
 
    new_node->next = table[hash(word)];
    table[hash(word)] = new_node;
-
-
+}
+  fclose
     // TODO
-    return false;
+    return true;
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
