@@ -54,6 +54,8 @@ bool load(const char *dictionary)
 
    strcpy(node->word , word)
 
+   
+
     // TODO
     return false;
 }
