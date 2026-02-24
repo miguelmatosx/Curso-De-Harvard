@@ -53,7 +53,7 @@ bool load(const char *dictionary)
    {
        return false;
    }
-   int LENGHT = 0
+   
    char word[LENGHT + 1];
    while(fscanf(file , %s , word) == 1)
   {
