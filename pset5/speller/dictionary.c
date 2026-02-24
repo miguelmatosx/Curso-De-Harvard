@@ -3,6 +3,7 @@
 #include <ctype.h>
 #include <stdbool.h>
 #include <stdio.h>
+#include <string.h>
 #include "dictionary.h"
 
 int word_count = 0;
@@ -27,7 +28,7 @@ bool check(const char *word)
 
     while(cursor !=NULL)
     {
-        if(strcasecmp (cursor->word , word) == 0)
+        if(strcmp (cursor->word , word) == 0)
         {
             return true;
         }
