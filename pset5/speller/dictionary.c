@@ -48,7 +48,10 @@ unsigned int hash(const char *word)
 bool load(const char *dictionary)
 {
    FILE *file = fopen(dictionary, "r");
+   while ( file != NULL)
+   {
    fscanf(file , %s , word);
+   }
 
    strcpy(node->word , word);
 
