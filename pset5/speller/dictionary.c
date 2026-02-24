@@ -56,7 +56,7 @@ bool load(const char *dictionary)
   {
 
 
-   strcpy(node->word , word);
+
 
    node *new_node = malloc(sizeof(node))
    if (new_node == NULL)
@@ -64,10 +64,12 @@ bool load(const char *dictionary)
      return false;
    }
 
+   strcpy(node->word , word);
+
    new_node->next = table[hash(word)];
    table[hash(word)] = new_node;
 }
-  fclose
+  fclose(file);
     // TODO
     return true;
 }
