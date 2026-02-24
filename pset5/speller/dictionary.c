@@ -32,19 +32,8 @@ bool check(const char *word)
     {
         return true;
     }
-  node *new_node = malloc(sizeof(node));
-  if (new_node == NULL)
-  {
-    return false;
-  }
 
-  new_node->next = table[hash(word)];
-  table[hash(word)] = new_node;
-
-
-
-
-    // TODO
+   // TODO
     return false;
 }
 
@@ -63,7 +52,7 @@ bool load(const char *dictionary)
 
    node *cursor = malloc(sizeof(node));
 
-   strcpy(node->word , word)
+   strcpy(node->word , word);
 
    node *new_node = malloc(sizeof(node));
    if (new_node == NULL)
@@ -72,10 +61,9 @@ bool load(const char *dictionary)
    }
 
    new_node->next = table[hash(word)];
-   table[]
+   table[hash(word)] = new_node;
 
-
-
+   fclose
     // TODO
     return false;
 }
