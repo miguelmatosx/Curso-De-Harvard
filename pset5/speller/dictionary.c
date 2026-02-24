@@ -83,8 +83,14 @@ bool unload(void)
 {
     for( int i = 0 ; i < N ; i++)
     {
-        
+        node *cursor = table[i];
+        while(cursor != NULL)
+        {
+            node *tmp = cursor->next;
+            free(cursor);
+            cursor = tmp;
+        }
     }
     // TODO
-    return false;
+    return true;
 }
