@@ -27,22 +27,14 @@ bool check(const char *word)
 
     while(cursor !=NULL)
     {
-        if(strcasecmp-> == 0)
+        if(strcasecmp (cursor->word , word) == 0)
         {
             return true;
         }
 
         cursor = cursor->next;
     }
-    return false;
-    
-    if (strcasecmp(cursor->word , word) == 0)
-    {
-        return true;
-    }
-
-   // TODO
-    return false;
+   return false;
 }
 
 // Hashes word to a number
