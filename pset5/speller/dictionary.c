@@ -32,7 +32,13 @@ bool check(const char *word)
     {
         return true;
     }
+  node *new_node = malloc(sizeof(node));
+  if (new_node ==NULL)
+  {
+    return false;
+  }
 
+  
     // TODO
     return false;
 }
@@ -54,7 +60,7 @@ bool load(const char *dictionary)
 
    strcpy(node->word , word)
 
-   
+
 
     // TODO
     return false;
