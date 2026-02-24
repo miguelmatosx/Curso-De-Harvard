@@ -5,6 +5,8 @@
 #include <stdio.h>
 #include "dictionary.h"
 
+int word_count = 0;
+
 // Represents a node in a hash table
 typedef struct node
 {
@@ -64,6 +66,7 @@ bool load(const char *dictionary)
 
    new_node->next = table[hash(word)];
    table[hash(word)] = new_node;
+   word_count++
 }
 
 
