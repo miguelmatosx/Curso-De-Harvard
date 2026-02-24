@@ -81,6 +81,9 @@ unsigned int size(void)
 // Unloads dictionary from memory, returning true if successful, else false
 bool unload(void)
 {
+    node tmp = cursor->next
+    free(cursor);
+    cursor = tmp;
     // TODO
     return false;
 }
