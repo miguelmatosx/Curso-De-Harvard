@@ -63,7 +63,7 @@ bool load(const char *dictionary)
    new_node->next = table[hash(word)];
    table[hash(word)] = new_node;
 
-   fclose
+   
     // TODO
     return false;
 }
