@@ -49,7 +49,10 @@ bool load(const char *dictionary)
 {
    FILE *fopen(dictionary, "r");
    fscanf(file , %s , word);
+
    node *cursor = malloc(sizeof(node));
+
+   strcpy(node->word , word)
 
     // TODO
     return false;
