@@ -32,11 +32,11 @@ bool check(const char *word)
         lower[strlen(word)] = '\0';
       }
 
-    node *cursor = table[hash( word )];
+    node *cursor = table[hash( lower)];
 
     while(cursor !=NULL)
     {
-        if(strcmp (cursor->word , word) == 0)
+        if(strcmp (cursor->word , lower) == 0)
         {
             return true;
         }
