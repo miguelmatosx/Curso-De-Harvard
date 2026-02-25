@@ -95,6 +95,7 @@ bool unload(void)
             free(cursor);
             cursor = tmp;
         }
+        table[i] = NULL;
     }
     // TODO
     return true;
