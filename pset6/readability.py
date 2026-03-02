@@ -11,6 +11,10 @@ for ch in texto:
     elif ch.isspace(): palavras +=1
     elif ch in ".!?": frases += 1
 
+if len(texto) > 0:
+    palavras +=1
+
+
 L = letras / palavras * 100
 S = frases / palavras * 100
 
