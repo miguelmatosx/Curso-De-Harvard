@@ -1,7 +1,7 @@
 from cs50 import get_float
 
 while True:
-  troco = get_float("Change: ")
+  troco = get_float("Change Owned: ")
   if troco < 1:
     break
 
@@ -18,7 +18,7 @@ cents %= 10
 moedas += cents // 5
 cents %= 5
 
-moedas += cents 
+moedas += cents
 
 print(moedas)
 
