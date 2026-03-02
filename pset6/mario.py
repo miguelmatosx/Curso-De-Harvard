@@ -7,4 +7,6 @@ while True:
         pass  # Ignora se não for número
 
 for i in range(height):
-    print(" " * (height - i - 1) + "#" * (i + 1))
+    space = " " * (height - i - 1)
+    hashes = "#" * (i +1)
+    print(space + hashes)
