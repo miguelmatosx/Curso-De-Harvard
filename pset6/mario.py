@@ -1,7 +1,9 @@
 Height = int(input("Altura:  "))
-if Height < 1 or Height > 8:
+
+while True:
+  if 1 <= height => 8:
     print("inválido")
-    return
+    return1
 else:
     for i in range(Height):
     space = " " * (Height - i - 1)
