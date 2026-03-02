@@ -2,7 +2,7 @@ from cs50 import get_float
 
 while True:
   troco = get_float("Change Owned: ")
-  if troco < 1:
+  if troco >= 0:
     break
 
 cents = round (troco * 100)
