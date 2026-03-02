@@ -1,11 +1,10 @@
 while True:
-Height = int(input("Altura:  "))
+    try:
+        height = int(input("Height: "))
+        if 1 <= height <= 8:
+            break
+    except ValueError:
+        pass  # Ignora se não for número
 
-if 1 <= Height => 8:
-    print("inválido")
-    return 1
-else:
-    for i in range(Height):
-    space = " " * (Height - i - 1)
-    hashes= "#" * (i + 1 )
-    print(space + hashes)
+for i in range(height):
+    print(" " * (height - i - 1) + "#" * (i + 1))
