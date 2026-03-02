@@ -1,1 +1,1 @@
-
+Height = input(" ")
