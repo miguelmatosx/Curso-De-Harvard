@@ -18,7 +18,7 @@ cents %= 10
 moedas += cents // 5
 cents %= 5
 
-moedas += cents
+moedas += cents 
 
 print(moedas)
 
