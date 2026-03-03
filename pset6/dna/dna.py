@@ -9,7 +9,7 @@ def main():
         print("Inválido")
 
     # TODO: Read database file into a variable
-    open
+    f.open
 
 
     # TODO: Read DNA sequence file into a variable
