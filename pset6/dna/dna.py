@@ -5,11 +5,11 @@ import sys
 def main():
 
     # TODO: Check for command-line usage
-    if sys.argv != 4:
-        print("Inválido")
+    if len(sys.argv) != 4:
+        print("Usage: python dna.py data.csv sequence.txt")
 
     # TODO: Read database file into a variable
-    f.open
+    with open(argv[3] , 'r')
 
 
     # TODO: Read DNA sequence file into a variable
