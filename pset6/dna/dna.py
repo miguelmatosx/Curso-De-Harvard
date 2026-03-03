@@ -11,11 +11,11 @@ def main():
 
     # TODO: Read database file into a variable
     with open(sys.argv[2] ,'r') as database:
-
-
+      reader = csv.Dictreader(database)
 
     # TODO: Read DNA sequence file into a variable
     with open(sys.argv[3] , 'r') as sequences:
+        dna = sequences.read().strip()
 
 
     # TODO: Find longest match of each STR in DNA sequence
