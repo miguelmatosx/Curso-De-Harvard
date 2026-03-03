@@ -5,7 +5,7 @@ import sys
 def main():
 
     # TODO: Check for command-line usage
-    if sys.argv != 3:
+    if sys.argv != 4:
         print("Inválido")
 
     # TODO: Read database file into a variable
