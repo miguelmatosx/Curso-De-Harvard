@@ -10,16 +10,16 @@ def main():
         sys.exit(1)
 
     # TODO: Read database file into a variable
-    with open(sys.argv[3] ,'r') as database:
-        print
+    with open(sys.argv[2] ,'r') as database:
+
 
 
     # TODO: Read DNA sequence file into a variable
-    with open(sys.argv[4] , 'r') as sequences:
-        print = ("invalid")
+    with open(sys.argv[3] , 'r') as sequences:
+
 
     # TODO: Find longest match of each STR in DNA sequence
-    str 
+    str
 
 
 
