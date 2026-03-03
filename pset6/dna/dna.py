@@ -12,6 +12,8 @@ def main():
     # TODO: Read database file into a variable
     with open(sys.argv[2] ,'r') as database:
       reader = csv.Dictreader(database)
+      header = next(reader)
+      strs = header[1:]
 
     # TODO: Read DNA sequence file into a variable
     with open(sys.argv[3] , 'r') as sequences:
@@ -20,7 +22,7 @@ def main():
 
     # TODO: Find longest match of each STR in DNA sequence
     with open(sys.argv[3] , 'r') as str_reader:
-        
+
 
     # TODO: Check database for matching profiles
 
