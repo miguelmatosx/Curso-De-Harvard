@@ -22,9 +22,10 @@ def main():
 
 
     # TODO: Find longest match of each STR in DNA sequence
-    for i in range(len(dna)):
+    for s in strs:
+      for i in range(len(dna)):
 
-      pedaco = dna[i : i +len(str)]
+        pedaco = dna[i : i +len(str)]
 
 
     # TODO: Check database for matching profiles
