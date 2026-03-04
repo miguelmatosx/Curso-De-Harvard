@@ -33,7 +33,7 @@ def main():
        contador_atual += 1
        j += len(s)
 
-    if count > max_count
+    if count > max_count:
        max_count = count
 
        str_count[s] = max_count
@@ -43,8 +43,20 @@ def main():
 
     with open(sys.argv[1] , 'r') as database:
        reader = csv.Dictreader(database)
-       for row in reader
+       for row in reader:
          database.append(row)
+
+    for person in database:
+      match = True
+      if int(person[s]) != str_count:
+         match = False
+         break
+
+      if match:
+         print(person ['name'])
+         return
+
+    print("No match")
 
 
     return
