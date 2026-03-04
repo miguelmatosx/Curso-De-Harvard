@@ -25,7 +25,7 @@ def main():
     for s in strs:
       for i in range(len(dna)):
 
-        pedaco = dna[i : i +len(str)]
+        pedaco = dna[i : i +len(s)]
 
 
     # TODO: Check database for matching profiles
