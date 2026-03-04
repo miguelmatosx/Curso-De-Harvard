@@ -27,8 +27,15 @@ def main():
 
         pedaco = dna[i : i + len(s)]
 
-        max_contagem = 0
-        while pedaco
+        max = 0
+        contagem_atual = 0
+        for i in pedaco:
+        max += 1
+        j = i
+
+        while dna[j : j + len(s)] == s:
+           contador_atual = 0
+           j += len(s)
 
 
 
