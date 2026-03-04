@@ -39,6 +39,12 @@ def main():
        str_count[s] = max_count
 
     # TODO: Check database for matching profiles
+    database = []
+
+    with open(sys.argv[1] , 'r') as database:
+       reader = csv.Dictreader(database)
+       for row in reader
+         database.append(row)
 
 
     return
