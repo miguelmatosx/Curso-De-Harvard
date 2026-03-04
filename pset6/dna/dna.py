@@ -64,16 +64,8 @@ def main():
 
 def longest_match(sequence, subsequence):
     """Returns length of longest run of subsequence in sequence."""
-    length = len(subsequence)
-    max_count = 0
 
-    for i in range (len(subsequence)):
-       count 0
-
-
-       while i + count * length <= len(subsequence) and z
-
-    # Initialize variables
+ # Initialize variables
     longest_run = 0
     subsequence_length = len(subsequence)
     sequence_length = len(sequence)
