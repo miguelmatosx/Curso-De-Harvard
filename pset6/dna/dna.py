@@ -27,6 +27,11 @@ def main():
 
         pedaco = dna[i : i + len(s)]
 
+        max_contagem = 0
+
+        for s in dna:
+           contagem_atual = 0
+
 
     # TODO: Check database for matching profiles
 
