@@ -22,24 +22,19 @@ def main():
 
 
     # TODO: Find longest match of each STR in DNA sequence
+    str_count = {}
     for s in strs:
+      max_count
       for i in range(len(dna)):
-
-        pedaco = dna[i : i + len(s)]
-
-
-      max_count = 0
-
-    for i in range(len(dna)):
-      contador_atual = 0
-      j = i
+        count = 0
+        j = i
 
     while dna[j : j + len(s)] == s:
        contador_atual += 1
        j += len(s)
 
-    if contador_atual > max:
-       max = contador_atual
+    if contador_atual > max_count:
+       max_count = contador_atual
 
 
     # TODO: Check database for matching profiles
