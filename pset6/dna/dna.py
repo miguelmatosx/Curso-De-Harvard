@@ -27,17 +27,19 @@ def main():
 
         pedaco = dna[i : i + len(s)]
 
-        max = 0
-        contagem_atual = 0
-        for i in pedaco:
-        max += 1
-        j = i
+    for s in strs:
+      max = 0
 
-        while dna[j : j + len(s)] == s:
-           contador_atual = 0
-           j += len(s)
+    for i in range(len(dna)):
+      contador_atual = 0
+      j = i
 
+    while dna[j : j + len(s)] == s:
+       contador_atual += 1
+       j += len(s)
 
+    if contador_atual > max:
+       max = contador_atual
 
 
     # TODO: Check database for matching profiles
