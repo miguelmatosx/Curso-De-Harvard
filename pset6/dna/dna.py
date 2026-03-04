@@ -33,9 +33,10 @@ def main():
        contador_atual += 1
        j += len(s)
 
-    if contador_atual > max_count:
-       max_count = contador_atual
+    if count > max_count
+       max_count = count
 
+       str_count[s] = max_count
 
     # TODO: Check database for matching profiles
 
