@@ -27,8 +27,8 @@ def main():
 
         pedaco = dna[i : i + len(s)]
 
-    for s in strs:
-      max = 0
+
+      max_count = 0
 
     for i in range(len(dna)):
       contador_atual = 0
