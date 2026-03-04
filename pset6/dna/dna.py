@@ -17,7 +17,7 @@ def main():
 
     # TODO: Read DNA sequence file into a variable
     with open(sys.argv[2] , 'r') as sequences:
-        dna = sequences.read().strip()
+     dna = sequences.read().strip()
 
 
 
@@ -28,7 +28,7 @@ def main():
 
 
     # TODO: Check database for matching profiles
-    
+
 
     return
 
